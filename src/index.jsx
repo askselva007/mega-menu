@@ -1,15 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Home from "./components/home";
+import Home from "./components/Home";
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
-import "./assets/styles/style.css";
+import "./assets/styles/Style.css";
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <Route path="/home" component={Home}></Route>
-            <Redirect from="/" to="/home" exact></Redirect>
+            <Home/>
         </Switch>
     </BrowserRouter>,
     document.getElementById("root")
